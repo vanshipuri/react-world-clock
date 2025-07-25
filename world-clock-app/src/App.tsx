@@ -86,7 +86,9 @@ function App() {
         />
       ))}
     </div>
+    <div className="flex justify-center items-center gap-4 mt-8">
       <p>This is Coded by <strong>Vanshi</strong> and is open-sourced on <a href="">Github</a> and Hosted on <a href="">Neltify</a></p>
+  </div>
   </div>
 </div>
 );
