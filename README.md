@@ -1,69 +1,44 @@
-# React + TypeScript + Vite
+#  React World Clock
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A sleek and lightweight world clock app built using **React + TypeScript + Vite**, allowing users to track real-time timezones across different cities globally. No third-party time APIs are used — all logic is handled with JavaScript's built-in `Date` and timezone features.
 
-Currently, two official plugins are available:
+## Introduction
+**Hosted** [World-Clock](https://react-world-clock-vanshi.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**LinkedIn:** [Vanshi](https://www.linkedin.com/in/vanshi-puri)
 
-## Expanding the ESLint configuration
+Created by Vanshi in July 2025
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+![App Screenshot](src/assets/Screenshot.png)
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+##  Tech Stack
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+-  React
+-  TypeScript
+-  Vite
+-  Tailwind 
+- JavaScript `Date` object for timezone handling
+- LocalStorage for saving user clocks
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+##  Features
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+-  Add any timezone through dropdown menu
+-  Automatically displays local time based on timezone
+-  Real-time time updates (every second)
+-  Delete clocks you no longer want to track
+-  Clocks persist across page refresh (stored in localStorage)
+-  Clean and responsive UI
+
+---
+
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/vanshipuri/react-world-clock
+cd react-world-clock
 ```

@@ -114,14 +114,14 @@ function App() {
             >
               GitHub
             </a>{" "}
-            &nbsp;|&nbsp; Hosted on{" "}
+            &nbsp;|&nbsp; Hosted on{"https://react-world-clock-vanshi.vercel.app/"}
             <a
               className="text-indigo-600 underline"
               href=""
               target="_blank"
               rel="noopener noreferrer"
             >
-              Netlify
+              Vercel
             </a>
           </p>
         </div>
