@@ -36,9 +36,15 @@ Created by Vanshi in July 2025
 ---
 
 
-### 1. Clone the repository
+### Clone the repository
 
 ```bash
+# 1. Clone the repository
 git clone https://github.com/vanshipuri/react-world-clock
 cd react-world-clock
-```
+
+# 2. Install all dependencies
+npm install
+
+# 3. Start the server
+npm run dev```
